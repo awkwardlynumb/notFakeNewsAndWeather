@@ -181,7 +181,7 @@ $(document).ready(function () {
 
   // // Breaking News API
   const newsurl =
-    "https://api.breakingapi.com/news?q=climate&type=headlines&locale=en-US&api_key=C6837518F5EC47FDB49E6D82FB5EE015";
+    "https://api.breakingapi.com/news?q=climate&type=headlines&locale=en-US&api_key=8921D00B5FAE40B29F039AAFA27E885C";
   $.ajax({
     url: newsurl,
     method: "GET",
