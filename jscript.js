@@ -14,6 +14,10 @@ $(document).ready(function () {
   let fivedayURL = "";
   let basicURL = "";
 
+  $.get('http://numbersapi.com/' + month + "/" + day + '/date', function(data) {
+    $('#number').text(data);
+});
+
   function basicData(location) {
     basicURL =
       "https://api.openweathermap.org/data/2.5/weather?" +
