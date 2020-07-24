@@ -6,9 +6,13 @@ $(document).ready(function () {
   const day = moment().format("DD");
   console.log(month, day);
 
-
+   $.get('http://numbersapi.com/' + month + "/" + day + '/date', function(data) {
+  //   $('#number').text(data);
+  $("#history").text(data);
+});
   //Numbers API used for This Day in History section
-  const historyURL = "http://numbersapi.com/" + month + "/" + day + "/date";
+  // const historyURL = "http://numbersapi.com/" + month + "/" + day + "/date";
+  // console.log(JSON.stringify(historyURL));
   let lat = "";
   let long = "";
   let fivedayURL = "";
@@ -171,13 +175,13 @@ $(document).ready(function () {
     weatherAjax();
   });
 
-  $.ajax({
-    url: historyURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-    $("#history").text(response);
-  });
+  // $.ajax({
+  //   url: historyURL,
+  //   method: "GET",
+  // }).then(function (response) {
+  //   console.log(response);
+  //   $("#history").text(response);
+  // });
 
   // // Breaking News API
   const newsurl =
