@@ -26,6 +26,10 @@ Below that you can find the top headlines of the day.
 
 We wanted to liven up the page so we added a This Day in History fact to the page as well, unfortunately it broke upon deployment.
 
-https://awkwardlynumb.github.io/notFakeNewsAndWeather/
 
-![](siteScreenShot.JPG)
+
+
+
+https://awkwardlynumb.github.io/notFakeNewsAndWeather/
+=======
+
