@@ -28,4 +28,4 @@ We wanted to liven up the page so we added a This Day in History fact to the pag
 
 https://awkwardlynumb.github.io/notFakeNewsAndWeather/
 
-![](siteScreenShot.JPG)
+![screenshot](https://github.com/awkwardlynumb/notFakeNewsAndWeather/blob/master/Project%201%20screenshot.jpg)
