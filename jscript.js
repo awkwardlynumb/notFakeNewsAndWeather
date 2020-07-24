@@ -15,9 +15,9 @@ $(document).ready(function () {
   let fivedayURL = "";
   let basicURL = "";
 
-  $.get('https://numbersapi.com/' + month + "/" + day + '/date', function(data) {
-     $("#history").text(data);
-});
+//   $.get('https://numbersapi.com/' + month + "/" + day + '/date', function(data) {
+//      $("#history").text(data);
+// });
 
   function basicData(location) {
     basicURL =
