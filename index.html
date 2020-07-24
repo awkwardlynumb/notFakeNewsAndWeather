@@ -33,9 +33,9 @@
             type="text"
             placeholder="Select a City"
             aria-label="Search"
-            id="searchBox"
+            id="searchSpace"
           />
-          <button type="submit" class="btn btn-secondary" id="sBtn">
+          <button type="submit" class="btn btn-secondary" id="searchBtn">
             <i class="icon fa fa-search"></i>
           </button>
         </form>
@@ -88,7 +88,11 @@
       </div>
 
       <!-- News section -->
-      <div class="jumbotron" id="newsSection"></div>
+      <div class="jumbotron" id="newsSection">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+            </div>
+      </div>
 
       <!-- History section -->
       <div class="jumbotron">

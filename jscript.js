@@ -129,7 +129,6 @@ $(document).ready(function () {
 
   function geoFindMe() {
     function success(position) {
-      console.log("hi i'm paul");
       console.log(position);
       basicData(
         "lat=" + position.coords.latitude + "&lon=" + position.coords.longitude
@@ -153,7 +152,6 @@ $(document).ready(function () {
   geoFindMe();
 
   $("#searchBtn").on("click", function (event) {
-    console.log("hi");
     event.preventDefault();
     basicData("q=" + $("#searchSpace").val());
     console.log($("#searchSpace").val());
@@ -169,11 +167,12 @@ $(document).ready(function () {
   });
 
   const newsurl =
-    "https://api.breakingapi.com/news?q=climate&type=headlines&locale=en-US&api_key=C6837518F5EC47FDB49E6D82FB5EE015";
+    "https://api.breakingapi.com/news?q=climate&type=headlines&locale=en-US&api_key=8921D00B5FAE40B29F039AAFA27E885C";
   $.ajax({
     url: newsurl,
     method: "GET",
   }).then(function (newsStuff) {
+    $("#newsSection").empty()
     const newsHeading = $("<h1>").text("News");
     $("#newsSection").append(newsHeading);
     console.log(newsStuff);
@@ -194,10 +193,8 @@ $(document).ready(function () {
       articleLink.append(articleBasic);
       col.append(articleLink, articleSnippet);
       row.append(col);
-      $("#newsSection").append(row);
+      $("#newsSection").append(articleLink, articleSnippet);
     }
   });
-  // <div class="spinner-border" role="status">
-  // <span class="sr-only">Loading...</span>
-  // </div>
+  
 });
