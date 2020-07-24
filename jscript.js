@@ -6,10 +6,7 @@ $(document).ready(function () {
   const day = moment().format("DD");
   console.log(month, day);
 
-   $.get('http://numbersapi.com/' + month + "/" + day + '/date', function(data) {
-  //   $('#number').text(data);
-  $("#history").text(data);
-});
+  
   //Numbers API used for This Day in History section
   // const historyURL = "http://numbersapi.com/" + month + "/" + day + "/date";
   // console.log(JSON.stringify(historyURL));
@@ -19,7 +16,7 @@ $(document).ready(function () {
   let basicURL = "";
 
   $.get('https://numbersapi.com/' + month + "/" + day + '/date', function(data) {
-    $('#number').text(data);
+     $("#history").text(data);
 });
 
   function basicData(location) {
